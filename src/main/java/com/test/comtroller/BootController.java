@@ -16,13 +16,13 @@ public class BootController {
 
     @RequestMapping("/index")
     public String index() {
-
+    	System.out.println("index");
         return "index";
     }
     
     @RequestMapping("/")
     public String welcome(){
-
+    	System.out.println("welcome");
         return "index";
         
     }
