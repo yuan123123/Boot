@@ -6,18 +6,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class BootController {
 
-    @RequestMapping(value="/index")
-    public String index() {
-        
-        return "index.jsp";
-    }
-    
     @GetMapping("/hi")
 	public String hi() {
 		return "hi, I'm springboot !";
 	}
 
+    @RequestMapping("/index")
+    public String index() {
+
+        return "index";
+    }
+    
+    @RequestMapping("/")
+    public String welcome(){
+
+        return "index";
+        
+    }
 }
