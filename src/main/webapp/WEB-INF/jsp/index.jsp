@@ -7,6 +7,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-	boot！
+	<form action="login" method="post">
+		<input type="text" name="username">
+		<input type="text" name="password">
+		<div id="divid">${error }</div>
+		<input type="submit" value="提交">
+	</form>
+	<%
+Cookie cookie=new Cookie("rukujspCookie", "rukujspCookie");
+response.addCookie(cookie);
+%>
+	
 </body>
+	<script src="../js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript">
+	$(window).load(function(){
+		//清除
+		$("#divid").empty();
+	});
+	</script>
 </html>
