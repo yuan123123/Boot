@@ -17,7 +17,7 @@ public class BootController {
         return "index";
     }
     
-    @RequestMapping("/")
+    @RequestMapping("/") 
     public String welcome(HttpServletRequest request,HttpServletResponse response){
     	System.out.println("welcome");
         return "index";
