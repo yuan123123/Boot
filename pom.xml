@@ -59,6 +59,12 @@
         <artifactId>tomcat-embed-jasper</artifactId>
         <scope>provided</scope>
     </dependency>
+    <!-- 发送邮件相关 -->
+	    <dependency>
+	        <groupId>javax.mail</groupId>
+	        <artifactId>mail</artifactId>
+	        <version>1.4.7</version>
+	    </dependency>
     </dependencies>
  	
 	<!-- java的版本 -->

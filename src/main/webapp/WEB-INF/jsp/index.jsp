@@ -17,7 +17,9 @@
 Cookie cookie=new Cookie("rukujspCookie", "rukujspCookie");
 response.addCookie(cookie);
 %>
-	
+	<a href="../../rdr.jsp">
+		调转
+	</a>
 </body>
 	<script src="../js/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript">
